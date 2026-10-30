@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak & Pendaftaran Komunitas Pendaki</title>
+</head>
+<body>
+
+    <header>
+        <h1>Gabung Komunitas Pegunungan Indonesia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="pegunungan.html">Daftar Pegunungan</a></li>
+                <li><a href="kontak.html">Kontak & Komunitas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulir Pendaftaran & Pertanyaan</h2>
+            <p>Silakan isi formulir di bawah ini untuk bergabung dengan komunitas pendaki atau mengajukan pertanyaan[cite: 1].</p>
+
+            <form action="#" method="POST">
+                <p>
+                    <label for="nama_lengkap">Nama Lengkap:</label><br>
+                    <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Masukkan nama Anda" required>
+                </p>
+
+                <p>
+                    <label for="email_user">Alamat Email:</label><br>
+                    <input type="email" id="email_user" name="email_user" placeholder="contoh@email.com" required>
+                </p>
+
+                <p>
+                    <label for="pengalaman">Tingkat Pengalaman Pendakian:</label><br>
+                    <select id="pengalaman" name="pengalaman" required>
+                        <option value="">-- Pilih Pengalaman --</option>
+                        <option value="pemula">Pemula (0 - 2 Gunung)</option>
+                        <option value="menengah">Menengah (3 - 10 Gunung)</option>
+                        <option value="mahir">Mahir (> 10 Gunung)</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>Kategori Pegunungan Favorit:</label><br>
+                    <input type="radio" id="volkanik" name="kategori_fav" value="Volkanik" required>
+                    <label for="volkanik">Gunung Berapi (Volkanik)</label><br>
+
+                    <input type="radio" id="non_volkanik" name="kategori_fav" value="Non-Volkanik">
+                    <label for="non_volkanik">Pegunungan Non-Volkanik / Hutan Tropis</label>
+                </p>
+
+                <p>
+                    <label for="pesan">Pesan atau Pengalaman Singkat:</label><br>
+                    <textarea id="pesan" name="pesan" rows="5" cols="40" placeholder="Tuliskan pesan Anda..." required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Kirim Form</button>
+                    <button type="reset">Reset</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Laporan Praktikum Web Statis - Pegunungan Indonesia.</p>
+    </footer>
+
+</body>
+</html> 
